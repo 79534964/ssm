@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -23,9 +24,7 @@
 		<c:forEach items="${moviesList}" var="item">
 			<tr>
 				<th scope="row">1</th>
-				<td>${moviesList}</td>
-				<td>${moviesList}</td>
-				<td>${moviesList}</td>
+				<td>${item.from}</td>
 			</tr>
 		</c:forEach>
 		</tbody>
@@ -41,8 +40,5 @@
 		src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
 		integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
 		crossorigin="anonymous"></script>
-		<script type="text/javascript">
-		console.log(${moviesList});
-		</script>
 </body>
 </html>
