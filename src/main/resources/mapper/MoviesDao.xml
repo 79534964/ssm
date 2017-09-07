@@ -8,7 +8,6 @@
 		<result column="movie_name" property="movieName" />
 		<result column="movie_img" property="movieImg" />
 		<result column="movie_href" property="movieHref" />
-		<result column="create_time" property="createTime" />
 		<result column="movie_type" property="movieType" />
 		<result column="movie_score" property="movieScore" />
 		<result column="movie_text" property="movieText" />

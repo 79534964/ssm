@@ -14,17 +14,25 @@
 	<table class="table">
 		<thead>
 			<tr>
-				<th>#</th>
-				<th>First Name</th>
-				<th>Last Name</th>
-				<th>Username</th>
+				<th>id</th>
+				<th>电影名</th>
+				<th>电影链接</th>
+				<th>电影类型</th>
+				<th>电影评分</th>
+				<th>电影来源</th>
+				<th>票房</th>
 			</tr>
 		</thead>
 		<tbody>
 		<c:forEach items="${moviesList}" var="item">
 			<tr>
-				<th scope="row">1</th>
-				<td>${item.from}</td>
+				<th scope="row"> ${item.id}</th>
+				<td>${item.movieName}</td>
+				<td>${item.movieHref}</td>
+				<td>${item.movieType}</td>
+				<td>${item.movieScore}</td>
+				<td>${item.movieFrom}</td>
+				<td>${item.moviesPeople.audience}</td>
 			</tr>
 		</c:forEach>
 		</tbody>
